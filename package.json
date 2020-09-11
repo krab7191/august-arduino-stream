@@ -1,0 +1,38 @@
+{
+  "name": "august-arduino-stream",
+  "version": "0.0.1",
+  "description": "A POC for consuming a readable stream using window.fetch",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"yarn run start:server\" \"yarn run start:client\"",
+    "build": "cd client && yarn run build",
+    "start:server": "nodemon ./server.js",
+    "start:client": "cd client && yarn dev",
+    "install": "cd client && yarn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krab7191/august-arduino-stream.git"
+  },
+  "keywords": [
+    "node",
+    "svelte",
+    "fetch",
+    "stream",
+    "readableStream"
+  ],
+  "author": "Karsten Rabe <karstenrabe91@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  },
+  "bugs": {
+    "url": "https://github.com/krab7191/august-arduino-stream/issues"
+  },
+  "homepage": "https://github.com/krab7191/august-arduino-stream#readme"
+}
